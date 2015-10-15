@@ -3,15 +3,19 @@ filetype off " Pathogen needs to run before plugin indent on
 call pathogen#infect()
 call pathogen#helptags() " generate helptags for everything in 'runtimepath'
 
+colorscheme base16-default
 filetype plugin indent on
 syntax on
 filetype indent plugin on
 
 let g:airline_powerline_fonts = 1
 let python_highlight_all = 1
+let base16colorspace=256
+let g:pymode_folding = 0
 
 set nocompatible
 set number
+set background=dark
 set laststatus=2
 set modeline
 set tabstop=4
