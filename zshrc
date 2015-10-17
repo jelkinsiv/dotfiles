@@ -1,4 +1,4 @@
-# Path to your oh-my-zsh installation.
+
 export ZSH=/Users/james.elkins/.oh-my-zsh
 
 # Set name of the theme to load.
@@ -94,6 +94,7 @@ function r() { grep "$1" ${@:2} -R . }
 function mkcd() { mkdir -p "$@" && cd "$_"; }
 
 # Aliases
+alias vim='/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim'
 alias showem='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideem='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias dude='cd ~/code/dude'
@@ -111,5 +112,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 
 # Base16 Shell
-BASE16_SHELL="$HOME/dotfiles/config/base16-shell/base16-default.dark.sh"
+BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
