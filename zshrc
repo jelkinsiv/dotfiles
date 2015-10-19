@@ -105,8 +105,6 @@ alias m311pro='cd ~/code/dude/m311v2'
 alias m311='cd ~/code/dude/m311'
 alias wepy='python3 ~/code/personal/wepy/wepy.py'
 
-export HOMEBREW_GITHUB_API_TOKEN=3fea811743d76731acf7f89d7ab1892bd47bc6fb
-
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
@@ -114,3 +112,6 @@ VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+#include api keys
+source ~/dotfiles/private/private
