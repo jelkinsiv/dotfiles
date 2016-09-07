@@ -1,3 +1,4 @@
+source /usr/local/Cellar/todo-txt/2.10/etc/bash_completion.d/todo_completion complete -F _todo t
 
 export ZSH=/Users/james.elkins/.oh-my-zsh
 
@@ -49,7 +50,7 @@ ZSH_THEME="bullet-train"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ssh-agent)
+plugins=(git ssh-agent z brew brew-cask ag)
 
 # User configuration
 
@@ -98,12 +99,14 @@ alias vim='/usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/MacOS/Vim'
 alias showem='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideem='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias dude='cd ~/code/dude'
-alias bashprofile='cd ~; atom .bash_profile'
+alias zshprofile='cd ~; atom dotfiles/zshrc'
 alias bashwelcome="sudo pico /etc/motd"
-alias m311c='cd ~/code/dude/citizen\ apps'
-alias m311pro='cd ~/code/dude/m311v2'
-alias m311='cd ~/code/dude/m311'
+alias m311c='cd ~/code/dude/citizen.ios'
+alias m311pro='cd ~/code/dude/ios.pro'
 alias wepy='python3 ~/code/personal/wepy/wepy.py'
+alias t='/usr/local/Cellar/todo-txt/2.10/bin/todo.sh -d $HOME/Dropbox/ToDo/todo.cfg'
+alias tl='t list'
+alias ta='t add'
 
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
@@ -114,4 +117,4 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 #include api keys
-source ~/dotfiles/private/private
+source dotfiles/private
